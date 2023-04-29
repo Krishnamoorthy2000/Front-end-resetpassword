@@ -6,7 +6,7 @@ import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import Signup from './components/signup';
 import Dashboard from './components/dashboard';
 import ResetPassword from './components/resetpassword';
-export const url = "http://localhost:3000"
+export const url = "https://password-reset-fvos.onrender.com"
 
 
 
@@ -20,7 +20,7 @@ function App() {
        <Route path="/signup" element={<Signup/>}/>
        <Route path='/forgotpassword' element={<ForgotPassword />}/>
        <Route path='/forgotpassword/resetpassword/:token' element={<ResetPassword/>}/>
-       <Route path="/dashboard" element={<Dashboard/>}/>
+       <Route path="/" element={<Dashboard/>}/>
 
       </Routes>
       </Router>

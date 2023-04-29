@@ -4,8 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { Container, Form, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import {url} from '../App';
-
+import { url } from "../App";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -16,7 +15,6 @@ const Login = () => {
   useEffect(() => {
     sessionStorage.clear();
   }, []);
-
 
   const handleLogin = async () => {
     let payload = { email, password };

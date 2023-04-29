@@ -60,7 +60,7 @@ const Signup = () => {
         <Button variant="primary" type="button" onClick={handleSignUp}>
           signup
         </Button>
-        <Button variant="primary" type="button" onClick={() =>{navigate("/")}}>
+        <Button variant="primary" type="button" onClick={() =>{navigate("/login")}}>
           login
         </Button>
       </Form>
