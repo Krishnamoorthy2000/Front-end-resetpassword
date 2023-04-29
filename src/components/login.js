@@ -22,7 +22,7 @@ const Login = () => {
       let response = await axios.post(`${url}/login`, payload);
       toast.success(response.data.message);
       sessionStorage.setItem("token", response.data.token);
-      navigate("/dashboard");
+      navigate("/");
     } catch (error) {
       toast.error(error.response.data.message);
     }
